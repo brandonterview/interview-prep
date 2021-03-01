@@ -28,7 +28,7 @@ class LinkedList(object):
         count = 0
         while current:
             count += 1
-            current = current.get_next
+            current = current.get_next()
         return count
     
     def search(self, data):
@@ -53,7 +53,7 @@ class LinkedList(object):
                 found = True
             else:
                 previous = current
-                current = current.get_next
+                current = current.get_next()
 
             
             if current is None:
